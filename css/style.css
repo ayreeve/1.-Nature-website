@@ -1,0 +1,643 @@
+/* GLOBAL */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 100;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+p {
+    font-size: .8em;
+}
+
+
+/* GRID */
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    padding: 20px 20px 20px 0;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* JUMBOTRONS (COMMON STYLES) + PNG */
+
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(../images/jumbotrons/first_jumbotron.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.jumbotron h1 {
+    margin-bottom: 0;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.slogan {
+    position: relative;
+    top: 28vh;
+}
+
+.phone {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 20vh;
+    left: 15vw;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.phone:hover {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+}
+
+
+/* 1ST PARAGRAPH */
+
+.first_col {
+    padding: 0 20px 0 0;
+}
+
+.second_col {
+    margin-top: 46px;
+    padding-right: 0;
+}
+
+
+/* GALLERY/TILES */
+
+.gall_1_row {
+    margin-top: 40px;
+}
+
+.gallery h3 {
+    font-weight: lighter;
+}
+
+[class*="col_"] {
+    padding: 20px 30px 30px;
+    color: #fff;
+}
+
+.col_design {
+    background-color: #54A567;
+}
+
+.col_build {
+    background-color: #777475;
+}
+
+.col_our {
+    background-image: url(../images/cards/1.jpg);
+    background-size: cover;
+}
+
+.link {
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.link_arrow {
+    margin-left: 5px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.link:hover .link_arrow {
+    margin-left: 50px;
+}
+
+.heart::after {
+    content: "\2661";
+    float: right;
+    font-size: 17px;
+}
+
+.col_sign {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-image: url(../images/cards/2.jpg);
+    background-size: cover;
+}
+
+.col_perf {
+    background-color: #6ACA70;
+}
+
+
+/* 2ND PARAGRAPH (4 WHITE COL)*/
+
+.paragraph h2 {
+    margin: 30px 5px 0;
+}
+
+
+/* 2ND JUMBOTRON */
+
+.second_jumb {
+    margin: 30px 0 0 0;
+    background-image: url(../images/jumbotrons/second_jumbotron.jpg);
+}
+
+.second_jumb h1 {
+    line-height: 1.2;
+}
+
+
+/* 3RD PARAGRAPH (3 COL, GREEN) */
+
+.green_row {
+    padding: 30px 0;
+    background-color: #54A567;
+    color: #fff;
+}
+
+.green_row h2 {
+    text-align: left;
+}
+
+
+/* OFFER/PRICE PLAN (BUTTONS, ICONS) */
+
+.offer {
+    background-color: #f4f2f2;
+}
+
+[class*="label"] {
+    margin-top: 90px;
+    padding: 5px 12px;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .6em;
+    color: #fff;
+}
+
+.label_most_pop {
+    margin: 0;
+    background-color: #35a23c;
+}
+
+.offer h2 {
+    margin: 10px 0;
+}
+
+.offer p {
+    margin-bottom: 20px;
+}
+
+.offer_team {
+    padding: 35px;
+    margin: 70px 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 45px 5px #dbd3d3;
+    box-shadow: 0 0 45px 5px #dbd3d3;
+}
+
+.btn_price {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: .7em;
+    background-color: #54A567;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.btn_price:hover {
+    opacity: .8;
+}
+
+.fa-apple,
+.fa-windows {
+    padding: 15px 13px 0 2px;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    color: #bab1b1;
+}
+
+
+/* FOOTER (PARAGRAPH, LIST COL, INPUT (SUBSCR.) */
+
+footer {
+    padding: 40px;
+    background-color: #1B2123;
+    color: #f4f2f2;
+}
+
+footer ul {
+    padding: 0;
+    font-size: .7em;
+    list-style-type: none;
+}
+
+h6 {
+    font-weight: 400;
+}
+
+footer p {
+    font-size: .7em;
+}
+
+.subscr_field {
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    position: relative;
+    border: 0;
+}
+
+footer_darker_font {
+    color: #777475;
+}
+
+.subscr_button {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 90%;
+    bottom: 99px;
+    border: 0;
+    background-image: url(../images/buttons/send_button.png);
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-color: #777476;
+    cursor: pointer;
+}
+
+.subscr_button:hover {
+    background-color: #54A567;
+}
+
+
+/*  Firefox only */
+
+@-moz-document url-prefix() {
+    /* offer */
+    .label_legacy {
+        background-color: #dbd3d3;
+    }
+    /* footer */
+    .subscr_button {
+        top: -100px;
+    }
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(119, 116, 117, .44);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(255, 255, 255, 0.44);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #777475;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* GRID */
+
+@media (max-width: 576px) {
+    /* For mobiles: */
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-2 {
+        width: 16.66%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+
+/* STYLES */
+
+@media (max-width: 992px) {
+    /* phone (in jumbotron)*/
+    .phone {
+        width: 60%;
+        top: 20vh;
+    }
+    /* 2nd paragraph (white bg) */
+    .paragraph div div:last-child {
+        padding-right: 0;
+    }
+    /* gallery/tiles */
+    .gallery > .container {
+        padding: 0;
+    }
+    .gall_2_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    /* 3rd paragraph (green bg) */
+    .green_row [class*="col-"] {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* jumbotron (slogan, phone) */
+    .slogan {
+        position: relative;
+        top: 10vh;
+    }
+    .phone {
+        top: 30vh;
+    }
+    /* 2nd paragraph (white) */
+    .paragraph div {
+        margin: 0;
+        padding: 5px;
+    }
+    /* h5 in 2nd and 3rd paragraph */
+    .paragraph h5,
+    .green_row h5 {
+        margin: 5px 0;
+    }
+    /* 3rd paragraph (green)*/
+    .green_row div {
+        margin: 0;
+    }
+    .green_row h2,
+    .green_row h6 {
+        margin: 0 10px;
+    }
+    /* offer */
+    .offer_team,
+    .offer_solo {
+        text-align: center;
+        margin: 0;
+        padding: 30px 10px;
+    }
+    .label_legacy {
+        margin: 0;
+    }
+    /* footer */
+    footer,
+    footer .container {
+        padding: 10px;
+        margin-right: 0;
+    }
+    .subscr_field {
+        width: 135%;
+    }
+    .subscr_button {
+        bottom: 98px;
+        left: 135%;
+    }
+}
+
+@media (max-width: 576px) {
+    /* global */
+    .container {
+        padding-right: 0;
+        margin: 0;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    /* jumbotron (h1 - common for jumb 1&2, slogan&phone - for jumb1*/
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+    .slogan {
+        text-align: center;
+        top: 10vh;
+    }
+    .phone {
+        width: 50%;
+        top: 15vh;
+        left: 34vw;
+    }
+    /* first paragraph (white)*/
+    .first_col,
+    .second_col {
+        margin: 0;
+        padding: 0 20px 0 0;
+    }
+    /* gallery */
+    .gall_2_row {
+        display: inherit;
+    }
+    /* 2nd jumbotron*/
+    .second_jumb {
+        text-align: center;
+    }
+    /* offer */
+    .offer .container {
+        padding: 5px;
+    }
+    /* footer */
+    footer_txt {
+        padding: 0;
+    }
+    .input {
+        height: 160px;
+        padding: 0;
+    }
+    .input h6 {
+        margin-top: 0;
+    }
+    .subscr_field {
+        height: 40px;
+    }
+    .subscr_button {
+        width: 40px;
+        height: 40px;
+        bottom: 78px;
+        left: 135%;
+    }
+    /*  Firefox only */
+    @-moz-document url-prefix() {
+        /* footer */
+        .subscr_button {
+            top: -79px;
+        }
+    }
+}
+
+@media (max-width: 492px),
+(max-height: 520px) {
+    /* jumbotron 1 (slogan, phone)*/
+    .slogan {
+        top: 10vh;
+    }
+    .phone {
+        display: none;
+    }
+    /* footer */
+    .subscr_field {
+        width: 90%;
+    }
+    .subscr_button {
+        left: 90%;
+    }
+}
