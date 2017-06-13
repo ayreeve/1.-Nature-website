@@ -112,6 +112,12 @@ p {
     margin-top: 40px;
 }
 
+.gall_2_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 .gallery h3 {
     font-weight: lighter;
 }
@@ -492,11 +498,6 @@ footer_darker_font {
     .gallery > .container {
         padding: 0;
     }
-    .gall_2_row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
     /* 3rd paragraph (green bg) */
     .green_row [class*="col-"] {
         padding: 10px;
@@ -550,7 +551,7 @@ footer_darker_font {
         width: 135%;
     }
     .subscr_button {
-        bottom: 98px;
+        bottom: 99px;
         left: 135%;
     }
 }
@@ -558,7 +559,6 @@ footer_darker_font {
 @media (max-width: 576px) {
     /* global */
     .container {
-        padding-right: 0;
         margin: 0;
     }
     h2 {
@@ -587,6 +587,10 @@ footer_darker_font {
     .gall_2_row {
         display: inherit;
     }
+    /* 2nd paragraph (white) */
+    .paragraph {
+        padding-right: 20px;
+    }
     /* 2nd jumbotron*/
     .second_jumb {
         text-align: center;
@@ -596,7 +600,10 @@ footer_darker_font {
         padding: 5px;
     }
     /* footer */
-    footer_txt {
+    .footer_txt {
+        padding-right: 0;
+    }
+    .footer_col {
         padding: 0;
     }
     .input {
@@ -634,6 +641,9 @@ footer_darker_font {
         display: none;
     }
     /* footer */
+    .footer_col {
+        padding: 5px;
+    }
     .subscr_field {
         width: 90%;
     }
